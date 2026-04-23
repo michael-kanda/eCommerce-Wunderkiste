@@ -1,6 +1,6 @@
 === eCommerce Wunderkiste ===
 Contributors: michaelkanda
-Donate link: https://designare.at
+Homepage: https://designare.at
 Tags: woocommerce, pricing, shipping, accessories, image
 Requires at least: 5.8
 Tested up to: 6.9
