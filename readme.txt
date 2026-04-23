@@ -114,3 +114,8 @@ You can customize the appearance using these CSS classes:
 
 Example:
 `.price-on-request { color: #e74c3c; font-weight: bold; }`
+
+----------------------------------
+Developed with ❤️ by Michael Kanda
+https://designare.at
+
