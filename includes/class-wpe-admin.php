@@ -144,6 +144,19 @@ class WPE_Admin {
             )
         );
 
+        // Cart Info Box aktivieren
+        add_settings_field(
+            'enable_cart_info_box',
+            __( 'Warenkorb Info-Box', 'woo-product-extras' ),
+            array( $this, 'checkbox_field_callback' ),
+            'woo-product-extras',
+            'wpe_main_section',
+            array(
+                'id'          => 'enable_cart_info_box',
+                'description' => __( 'Zeigt eine anpassbare Info-Box im WooCommerce Warenkorb an (klassischer Warenkorb und/oder Cart-Block). Konfiguration unter WooCommerce → Cart Info Box.', 'woo-product-extras' )
+            )
+        );
+
         // CSS Bereich
         add_settings_section(
             'wpe_css_section',
@@ -243,6 +256,7 @@ class WPE_Admin {
         $sanitized['enable_image_resizer']       = ! empty( $input['enable_image_resizer'] ) ? 1 : 0;
         $sanitized['enable_order_recovery']      = ! empty( $input['enable_order_recovery'] ) ? 1 : 0;
         $sanitized['enable_tiered_pricing']      = ! empty( $input['enable_tiered_pricing'] ) ? 1 : 0;
+        $sanitized['enable_cart_info_box']       = ! empty( $input['enable_cart_info_box'] ) ? 1 : 0;
 
         // NEU: Sprache
         $sanitized['plugin_language'] = ( isset( $input['plugin_language'] ) && $input['plugin_language'] === 'en' ) ? 'en' : 'de';

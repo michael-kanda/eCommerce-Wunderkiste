@@ -3,7 +3,7 @@
  * Plugin Name: eCommerce Wunderkiste
  * Plugin URI: https://designare.at
  * Description: Extended product options for WooCommerce - Price on Request, Shipping Methods per Product, Accessories Tab, Image Resizer, Order Recovery & Tiered Pricing
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Michael Kanda
  * Author URI: https://designare.at
  * Text Domain: ecommerce-wunderkiste
@@ -30,7 +30,7 @@ add_action( 'before_woocommerce_init', function() {
 } );
 
 // Define plugin constants
-define( 'WPE_VERSION', '1.1.0' );
+define( 'WPE_VERSION', '1.2.0' );
 define( 'WPE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WPE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'WPE_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -124,6 +124,12 @@ class WooCommerce_Product_Extras {
         if ( ! empty( $options['enable_tiered_pricing'] ) ) {
             require_once WPE_PLUGIN_DIR . 'includes/class-wpe-tiered-pricing.php';
             new WPE_Tiered_Pricing();
+        }
+
+        // Cart Info Box module
+        if ( ! empty( $options['enable_cart_info_box'] ) ) {
+            require_once WPE_PLUGIN_DIR . 'includes/class-wpe-cart-info-box.php';
+            new WPE_Cart_Info_Box();
         }
     }
 

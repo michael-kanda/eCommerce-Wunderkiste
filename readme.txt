@@ -1,15 +1,15 @@
 === eCommerce Wunderkiste ===
 Contributors: michaelkanda
 Homepage: https://designare.at
-Tags: woocommerce, pricing, shipping, accessories, image
+Tags: woocommerce, pricing, shipping, accessories, image, cart, info-box
 Requires at least: 5.8
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Extended product options: Price on Request, Shipping per Product, Accessories, Image Resizer & Tiered Pricing.
+Extended product options: Price on Request, Shipping per Product, Accessories, Image Resizer, Tiered Pricing & Cart Info Box.
 
 == Description ==
 
@@ -51,6 +51,13 @@ eCommerce Wunderkiste adds powerful product management features to your WooComme
 * Automatically displays a price table on the product page
 * Flexibly configurable (e.g., 1-5 pieces: €4, 6+ pieces: €3)
 
+**Cart Info Box**
+* Customizable info box in the WooCommerce cart (e.g. shipping threshold, info notes)
+* Works with both the classic Cart shortcode AND the new Cart Block (Gutenberg)
+* Auto-injection into the Cart Block, or manual placement via the "Warenkorb Info-Box" block
+* Title, message, icon (emoji), background & text color, position — all configurable
+* HPOS- and Cart-/Checkout-Block-compatible
+
 == Installation ==
 
 1. Upload the `ecommerce-wunderkiste` folder to the `/wp-content/plugins/` directory
@@ -86,6 +93,11 @@ Yes, the Image Resizer overwrites the original image. Make sure to keep backups 
 
 == Changelog ==
 
+= 1.2.0 =
+* Added Cart Info Box module (formerly the standalone "WooCommerce Cart Info Box" plugin)
+* Cart Info Box supports classic cart and the WooCommerce Cart Block (auto-injection or manual block)
+* HPOS and Cart/Checkout Blocks compatibility declared
+
 = 1.1.0 =
 * Added Tiered Pricing module
 * Added Order Recovery module
@@ -101,6 +113,9 @@ Yes, the Image Resizer overwrites the original image. Make sure to keep backups 
 * Image Resizer module
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+New module: Cart Info Box (previously a separate plugin) — configurable info box for classic cart and Cart Block.
 
 = 1.1.0 =
 New features: Tiered Pricing and Order Recovery modules. Improved security and code quality.
