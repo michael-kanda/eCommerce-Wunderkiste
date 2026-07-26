@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "woo-cart-info-box/info-box",
+	"version": "1.1.0",
+	"title": "Warenkorb Info-Box",
+	"description": "Zeigt die im Plugin konfigurierte Info-Box an. Ideal innerhalb des WooCommerce Cart-Blocks.",
+	"category": "woocommerce",
+	"icon": "info-outline",
+	"keywords": ["woocommerce", "cart", "warenkorb", "info", "notice"],
+	"textdomain": "ecommerce-wunderkiste",
+	"supports": {
+		"html": false,
+		"multiple": true,
+		"reusable": true,
+		"align": ["wide", "full"]
+	},
+	"editorScript": "wcib-info-box-editor",
+	"style": "wcib-frontend",
+	"editorStyle": "wcib-frontend"
+}
