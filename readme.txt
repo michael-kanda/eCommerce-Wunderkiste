@@ -88,3 +88,6 @@ Order Recovery relies on WP-Cron. If `DISABLE_WP_CRON` is set, a real system cro
 
 = 1.3.0 =
 Security release. Fixes a privilege issue in the Image Resizer and removes a hard-coded contact address from customer e-mails. The plugin folder and main file were renamed: delete the old version before installing.
+------------------------------------------------
+Developed with ❤️ by Michael Kanda
+https://designare.at
